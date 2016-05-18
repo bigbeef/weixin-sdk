@@ -93,9 +93,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>$(jdk.version}</source>
+					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
-					<encoding>${project.build.sourceEncoding}</encoding>  <!-- “编码 GBK 的不可映射字符”问题的解决 -->
+					<encoding>${project.build.sourceEncoding}</encoding>
 				</configuration>
 			</plugin>
 		</plugins>
