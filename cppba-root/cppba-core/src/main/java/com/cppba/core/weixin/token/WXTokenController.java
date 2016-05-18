@@ -2,22 +2,29 @@ package com.cppba.core.weixin.token;
 
 import java.util.Date;
 
-import com.kunbao.weixin.sdk.base.WXHttpDispatch;
-import com.kunbao.weixin.sdk.base.domain.constant.WXAppConstant;
-import com.kunbao.weixin.sdk.base.exception.WXException;
-import com.kunbao.weixin.sdk.token.request.WXTokenRequest;
-import com.kunbao.weixin.sdk.token.response.WXTokenResponse;
+import com.cppba.core.weixin.WXApi;
+import com.cppba.core.weixin.base.WXHttpDispatch;
+import com.cppba.core.weixin.base.domain.constant.WXAppConstant;
+import com.cppba.core.weixin.base.exception.WXException;
+import com.cppba.core.weixin.token.request.WXTokenRequest;
+import com.cppba.core.weixin.token.response.WXTokenResponse;
 
 import lombok.Data;
 
 public class WXTokenController {
 
+	private static WXApi wxapi = null;
+	
+	public WXTokenController(WXApi wxapi){
+		this.wxapi = wxapi;
+	}
+	
 	private static AccessToken accessToken;
 
     public synchronized static void parseAndStoreAccessToken() throws WXException {
         if (!isTokenAvailable()) {
             //get access token.
-            WXTokenRequest request = new WXTokenRequest(WXAppConstant.APP_ID, WXAppConstant.APP_SECRET);
+            WXTokenRequest request = new WXTokenRequest(wxapi.getWxAppConstant().APP_ID, wxapi.getWxAppConstant().APP_SECRET);
             WXTokenResponse response = (WXTokenResponse) WXHttpDispatch.execute(request);
             //store
             accessToken = new AccessToken();

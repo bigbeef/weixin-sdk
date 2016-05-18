@@ -1,7 +1,7 @@
 package com.cppba.core.weixin.token.response;
 
+import com.cppba.core.weixin.base.response.WXJsonResponse;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.kunbao.weixin.sdk.base.response.WXJsonResponse;
 
 import lombok.Getter;
 

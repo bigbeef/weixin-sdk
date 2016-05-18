@@ -22,7 +22,7 @@
 		<jdk.version>1.7</jdk.version>
 		<jackson.version>2.7.4</jackson.version>
 		<kunbao.weixin.sdk.version>1.1</kunbao.weixin.sdk.version>
-		<lombok.version>1.14.4</lombok.version>
+		<lombok.version>1.16.8</lombok.version>
 		<httpclient.version>4.3.6</httpclient.version>
 		<commons.codec.version>1.8</commons.codec.version>
 		<guava.version>18.0</guava.version>
@@ -32,11 +32,11 @@
 
 	<dependencies>
 		<!-- 微信sdk -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.kunbao.weixin</groupId>
 			<artifactId>sdk</artifactId>
 			<version>${kunbao.weixin.sdk.version}</version>
-		</dependency>
+		</dependency> -->
 		<!-- jackson -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>

@@ -1,15 +1,15 @@
 package com.cppba.core.weixin.base;
 
-import com.kunbao.weixin.sdk.base.exception.WXException;
-import com.kunbao.weixin.sdk.base.request.WXRequest;
-import com.kunbao.weixin.sdk.base.response.WXJsonResponse;
-import com.kunbao.weixin.sdk.base.response.WXJsonResponseChecker;
-import com.kunbao.weixin.sdk.base.response.WXResponse;
-import com.kunbao.weixin.sdk.util.WXHttpUtil;
-
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Map;
+
+import com.cppba.core.weixin.base.exception.WXException;
+import com.cppba.core.weixin.base.request.WXRequest;
+import com.cppba.core.weixin.base.response.WXJsonResponse;
+import com.cppba.core.weixin.base.response.WXJsonResponseChecker;
+import com.cppba.core.weixin.base.response.WXResponse;
+import com.cppba.core.weixin.util.WXHttpUtil;
 
 /**
  * Created by lemon_bar on 15/7/7.

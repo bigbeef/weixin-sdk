@@ -1,13 +1,14 @@
 package com.cppba.core.weixin.base.request;
 
-import com.kunbao.weixin.sdk.base.domain.constant.WXBaseUrl;
-import com.kunbao.weixin.sdk.base.domain.constant.WXHTTPMethod;
-import com.kunbao.weixin.sdk.base.exception.WXException;
-import com.kunbao.weixin.sdk.base.response.WXResponse;
-import lombok.Getter;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import com.cppba.core.weixin.base.domain.constant.WXBaseUrl;
+import com.cppba.core.weixin.base.domain.constant.WXHTTPMethod;
+import com.cppba.core.weixin.base.exception.WXException;
+import com.cppba.core.weixin.base.response.WXResponse;
+
+import lombok.Getter;
 
 /**
  * Created by lemon_bar on 15/7/7.

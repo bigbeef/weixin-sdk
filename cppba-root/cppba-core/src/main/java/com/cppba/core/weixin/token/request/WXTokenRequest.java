@@ -1,9 +1,9 @@
 package com.cppba.core.weixin.token.request;
 
-import com.kunbao.weixin.sdk.base.exception.WXException;
-import com.kunbao.weixin.sdk.base.request.WXRequest;
-import com.kunbao.weixin.sdk.token.response.WXTokenResponse;
-import com.kunbao.weixin.sdk.util.WXJsonUtil;
+import com.cppba.core.weixin.base.exception.WXException;
+import com.cppba.core.weixin.base.request.WXRequest;
+import com.cppba.core.weixin.token.response.WXTokenResponse;
+import com.cppba.core.weixin.util.WXJsonUtil;
 
 /**
  * http请求方式: GET

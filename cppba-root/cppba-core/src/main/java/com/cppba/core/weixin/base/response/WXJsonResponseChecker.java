@@ -1,6 +1,6 @@
 package com.cppba.core.weixin.base.response;
 
-import com.kunbao.weixin.sdk.base.exception.WXException;
+import com.cppba.core.weixin.base.exception.WXException;
 
 /**
  * Created by lemon_bar on 15/7/23.
